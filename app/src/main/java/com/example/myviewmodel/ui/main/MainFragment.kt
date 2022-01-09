@@ -32,7 +32,7 @@ class MainFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
         val intent = Intent(activity, SecondActivity::class.java)
-        var car = Car()
+        var car = DiscoveredCar()
         intent.putExtra("string", "hoge")
         intent.putExtra("car", car)
         startActivity(intent)

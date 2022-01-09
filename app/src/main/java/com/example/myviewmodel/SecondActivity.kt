@@ -19,7 +19,7 @@ class SecondActivity : AppCompatActivity() {
 //        }
         Log.d(TAG, "onCreate() called with: savedInstanceState = $savedInstanceState")
         Log.d(TAG, "onCreate: intent = $intent")
-        val car = intent.getSerializableExtra("car") as Car
+        val car = intent.getSerializableExtra("car") as DiscoveredCar
         Log.d(TAG, "onCreate: car = " + car + ", .name = "
                 + car.name + ", .id = " + car.id)
         Log.d(TAG, "onCreate: car = $car, .name = ${car.name} , id = ${car.id}")
